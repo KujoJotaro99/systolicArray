@@ -1,0 +1,27 @@
+# .svlint.toml
+
+[syntaxrules]
+
+# Enforce correct assignment types in procedural blocks.
+blocking_assignment_in_always_ff = true
+blocking_assignment_in_always_latch = true
+non_blocking_assignment_in_always_comb = true
+
+# Prefer SystemVerilog procedural constructs over legacy Verilog.
+keyword_forbidden_always = true
+keyword_forbidden_wire_reg = true
+
+# Keep module declarations and control flow explicit.
+module_nonansi_forbidden = true
+multiline_if_begin = true
+multiline_for_begin = true
+
+# Require sensible case statement coverage.
+case_default = true
+explicit_case_default = true
+
+# Avoid procedural continuous assignments.
+procedural_continuous_assignment = true
+
+# Require parameters to have default values.
+parameter_default_value = true
